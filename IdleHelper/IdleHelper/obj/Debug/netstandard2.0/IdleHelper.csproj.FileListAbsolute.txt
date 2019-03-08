@@ -23,4 +23,3 @@ C:\Source\IdleHelper\IdleHelper\IdleHelper\obj\Debug\netstandard2.0\IdleHelper.A
 C:\Source\IdleHelper\IdleHelper\IdleHelper\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Source\IdleHelper\IdleHelper\IdleHelper\obj\Debug\netstandard2.0\IdleHelper.dll
 C:\Source\IdleHelper\IdleHelper\IdleHelper\obj\Debug\netstandard2.0\IdleHelper.pdb
-C:\Source\IdleHelper\IdleHelper\IdleHelper\obj\Debug\netstandard2.0\IdleHelper.csprojAssemblyReference.cache

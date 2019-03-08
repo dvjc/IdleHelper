@@ -117,6 +117,16 @@
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand" />
 
+                <Picker x:Name="pickerPotato" Grid.Row="5" Grid.Column="1"
+                    Title="Select a Potato Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerStrawberry" Grid.Row="6" Grid.Column="0"
+                    Title="Select a Strawberry Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
                 <Button x:Name="BtnReturn" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2"
                     Text="Return"
                     Clicked="BtnReturn_Clicked"

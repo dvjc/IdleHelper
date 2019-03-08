@@ -19,11 +19,22 @@ namespace IdleHelper.Reusables
         , Corn
         , Potato
         , Strawberry
-        , Watemelon
+        , Watermelon
         , Apple
         , Cherry
         , Vanilla
         , Avocado
         , Cotton
+        , Orange
+        , Sugarcane
+        , Pineapple
+        , Kiwi
+        , Peach
+        , Fig
+        , Pear
+        , Pomegranite
+        , Coffee
+        , Banana
+        , Lemon
     }
 }

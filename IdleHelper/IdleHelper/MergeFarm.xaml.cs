@@ -76,6 +76,16 @@ namespace IdleHelper
             pickerCorn.ItemsSource = GetPlantList(PlantEnums.Corn);
             pickerCorn.SelectedIndexChanged += UpdateAllTheThings;
             #endregion Corn Picker
+
+            #region Potato Picker
+            pickerPotato.ItemsSource = GetPlantList(PlantEnums.Potato);
+            pickerPotato.SelectedIndexChanged += UpdateAllTheThings;
+            #endregion Potato Picker
+
+            #region Strawberry Picker
+            pickerStrawberry.ItemsSource = GetPlantList(PlantEnums.Strawberry);
+            pickerStrawberry.SelectedIndexChanged += UpdateAllTheThings;
+            #endregion Strawberry Picker
         }
 
         public double SumSelectionControls()
@@ -149,6 +159,63 @@ namespace IdleHelper
                 case PlantEnums.Corn:
                     retVal = 210;
                     break;
+                case PlantEnums.Potato:
+                    retVal = 240;
+                    break;
+                case PlantEnums.Strawberry:
+                    retVal = 270;
+                    break;
+                case PlantEnums.Watermelon:
+                    retVal = 330;
+                    break;
+                case PlantEnums.Apple:
+                    retVal = 360;
+                    break;
+                case PlantEnums.Cherry:
+                    retVal = 390;
+                    break;
+                case PlantEnums.Vanilla:
+                    retVal = 420;
+                    break;
+                case PlantEnums.Avocado:
+                    retVal = 450;
+                    break;
+                case PlantEnums.Cotton:
+                    retVal = 480;
+                    break;
+                case PlantEnums.Orange:
+                    retVal = 510;
+                    break;
+                case PlantEnums.Sugarcane:
+                    retVal = 540;
+                    break;
+                case PlantEnums.Pineapple:
+                    retVal = 570;
+                    break;
+                case PlantEnums.Kiwi:
+                    retVal = 600;
+                    break;
+                case PlantEnums.Peach:
+                    retVal = 630;
+                    break;
+                case PlantEnums.Fig:
+                    retVal = 660;
+                    break;
+                case PlantEnums.Pear:
+                    retVal = 690;
+                    break;
+                case PlantEnums.Pomegranite:
+                    retVal = 720;
+                    break;
+                case PlantEnums.Coffee:
+                    retVal = 750;
+                    break;
+                case PlantEnums.Banana:
+                    retVal = 780;
+                    break;
+                case PlantEnums.Lemon:
+                    retVal = 780;
+                    break;
             }
             return retVal;
         }
@@ -158,6 +225,7 @@ namespace IdleHelper
             List<string> retVal = new List<string>();
             switch(plant)
             {
+                #region tomato case
                 case PlantEnums.Tomato:
                     retVal.Add("Select a Tomato Level");
                     retVal.Add("Tomato Sapling");
@@ -171,6 +239,8 @@ namespace IdleHelper
                     retVal.Add("Polished Tomato Plot");
                     retVal.Add("Spage Age Tomato Plot");
                     break;
+                #endregion tomato case
+                #region wheat case
                 case PlantEnums.Wheat:
                     retVal.Add("Select a Wheat Level");
                     retVal.Add("Small Wheat Plant");
@@ -184,6 +254,8 @@ namespace IdleHelper
                     retVal.Add("Elevated Wheat Field");
                     retVal.Add("Hydroponic Wheat Field");
                     break;
+                #endregion wheat case
+                #region eggplant case
                 case PlantEnums.Eggplant:
                     retVal.Add("Select a Eggplant Level");
                     retVal.Add("Eggplant Sapling");
@@ -197,6 +269,8 @@ namespace IdleHelper
                     retVal.Add("Brick Eggplant Field");
                     retVal.Add("Luscious Eggplant Cradle");
                     break;
+                #endregion eggplant case
+                #region grape case
                 case PlantEnums.Grape:
                     retVal.Add("Select a Grape Level");
                     retVal.Add("Small Grape Plant");
@@ -210,6 +284,8 @@ namespace IdleHelper
                     retVal.Add("Shiny Grape Arbor");
                     retVal.Add("Fancy Grape Arbor");
                     break;
+                #endregion grape case
+                #region carrot case
                 case PlantEnums.Carrot:
                     retVal.Add("Select a Carrot Level");
                     retVal.Add("Single Carrot Plant");
@@ -223,6 +299,8 @@ namespace IdleHelper
                     retVal.Add("Premium Carrot Plot");
                     retVal.Add("Designer Carrot Plot");
                     break;
+                #endregion carrot case
+                #region pumpkin case
                 case PlantEnums.Pumpkin:
                     retVal.Add("Select a Pumpkin Level");
                     retVal.Add("Small Pumpkin Plant");
@@ -236,6 +314,8 @@ namespace IdleHelper
                     retVal.Add("Hardened Pumpkin Patch");
                     retVal.Add("Prismatic Pumpkin Patch");
                     break;
+                #endregion pumpkin case
+                #region pepper case
                 case PlantEnums.Pepper:
                     retVal.Add("Select a Pepper Level");
                     retVal.Add("Minor Pepper Plant");
@@ -249,6 +329,8 @@ namespace IdleHelper
                     retVal.Add("Grandiouse Pepper Plot");
                     retVal.Add("Awesome Pepper Plot");
                     break;
+                #endregion pepper case
+                #region cucumber case
                 case PlantEnums.Cucumber:
                     retVal.Add("Select a Cucumber Level");
                     retVal.Add("Tiny Cucumber Bush");
@@ -262,6 +344,8 @@ namespace IdleHelper
                     retVal.Add("Grand Cucumber Bush");
                     retVal.Add("Masterful Cucumber Bush");
                     break;
+                #endregion cucumber case
+                #region blueberry case
                 case PlantEnums.Blueberry:
                     retVal.Add("Select a Blueberry Level");
                     retVal.Add("Fledgling Blueberry Plant");
@@ -275,6 +359,8 @@ namespace IdleHelper
                     retVal.Add("Refined Blueberry Bush");
                     retVal.Add("Deluxe Blueberry Bush");
                     break;
+                #endregion blueberry case
+                #region cabbage case
                 case PlantEnums.Cabbage:
                     retVal.Add("Select a Cabbage Level");
                     retVal.Add("Lone Cabbage Plant");
@@ -288,6 +374,8 @@ namespace IdleHelper
                     retVal.Add("Level 9 Cabbage");
                     retVal.Add("Artistic Cabbage Patch");
                     break;
+                #endregion cabbage case
+                #region corn case
                 case PlantEnums.Corn:
                     retVal.Add("Select a Corn Level");
                     retVal.Add("Single Ear Of Corn");
@@ -301,6 +389,129 @@ namespace IdleHelper
                     retVal.Add("Stylized Corn Plot");
                     retVal.Add("Art Deco Corn Plot");
                     break;
+                #endregion corn case
+                #region potato case
+                case PlantEnums.Potato:
+                    retVal.Add("Select a Potato Level");
+                    retVal.Add("Single Ear Of Corn");
+                    retVal.Add("Potato Pair");
+                    retVal.Add("Pretty Potato Patch");
+                    retVal.Add("Bunch O' Potatoes");
+                    retVal.Add("Golden Potato Plot");
+                    retVal.Add("Organic Potato Plot");
+                    retVal.Add("Peaceful Potato Plot");
+                    retVal.Add("Precious Potato Plot");
+                    retVal.Add("Prosperous Potato Plot");
+                    retVal.Add("Priceless Potato Plot");
+                    break;
+                #endregion potato case
+                #region strawberry case
+                case PlantEnums.Strawberry:
+                    retVal.Add("Select a Strawberry Level");
+                    retVal.Add("Singular Strawberry Shrub");
+                    retVal.Add("Sweet Strawberry Shrub");
+                    retVal.Add("Special Strawberry Bush");
+                    retVal.Add("Shiny Strawberry Bush");
+                    retVal.Add("Sublime Strawberry Bush");
+                    retVal.Add("Scenic Strawberry Bush");
+                    retVal.Add("Sightly Strawberry Bush");
+                    retVal.Add("Snazzy Strawberry Bush");
+                    retVal.Add("Slick Strawberry Bush");
+                    retVal.Add("Sensational Strawberry Bush");
+                    break;
+                #endregion strawberry case
+                #region watermelon case
+                case PlantEnums.Watermelon:
+                    retVal.Add("Select a Watermelon Level");
+                    retVal.Add("Tasty Watermelon Plant");
+                    retVal.Add("Wise Watermelon Plot");
+                    retVal.Add("Worthy Watermelon Plot");
+                    retVal.Add("Wholesome Watermelon Plot");
+                    retVal.Add("Wide Watermelon Plot");
+                    retVal.Add("Woody Watermelon Plot");
+                    retVal.Add("Wondrous Watermelon Plot");
+                    retVal.Add("Whimsical Watermelons");
+                    retVal.Add("Well-built Watermelon Plot");
+                    retVal.Add("World-class Watermelons");
+                    break;
+                #endregion watermelon case
+                #region apple case
+                case PlantEnums.Apple:
+                    retVal.Add("Select an Apple Level");
+                    retVal.Add("Level 1 Apple");
+                    retVal.Add("Level 2 Apple");
+                    retVal.Add("Level 3 Apple");
+                    retVal.Add("Level 4 Apple");
+                    retVal.Add("Level 5 Apple");
+                    retVal.Add("Level 6 Apple");
+                    retVal.Add("Level 7 Apple");
+                    retVal.Add("Level 8 Apple");
+                    retVal.Add("Level 9 Apple");
+                    retVal.Add("Level 10 Apple");
+                    break;
+                #endregion apple case
+                #region cherry case
+                case PlantEnums.Cherry:
+                    retVal.Add("Select a Cherry Level");
+                    retVal.Add("Cherry Tree Sapling");
+                    retVal.Add("Twin Cherry Tree");
+                    retVal.Add("Triple Cherry Tree");
+                    retVal.Add("Tasteful Cherry Tree");
+                    retVal.Add("Sweet Cherry Tree");
+                    retVal.Add("Sour Cherry Tree");
+                    retVal.Add("Tumultuous Cherry Tree");
+                    retVal.Add("True Cherry Tree");
+                    retVal.Add("Chipper Cherry Tree");
+                    retVal.Add("Care Free Cherry Tree");
+                    break;
+                #endregion cherry case
+                #region vanilla case
+                case PlantEnums.Vanilla:
+                    int v = 0;
+                    retVal.Add("Select a Vanilla Level");
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(v++).Append(" Vanilla").ToString());
+                    break;
+                #endregion vanilla case
+                #region avocado case
+                case PlantEnums.Avocado:
+                    int a = 0;
+                    retVal.Add("Select an Avocado Level");
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(a++).Append(" Avocado").ToString());
+                    break;
+                #endregion avocado case
+                #region cotton case
+                case PlantEnums.Cotton:
+                    int c = 0;
+                    retVal.Add("Select a Cotton Level");
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    retVal.Add(new StringBuilder("Level ").Append(c++).Append(" Cotton").ToString());
+                    break;
+                #endregion cotton case
             }
             return retVal;
         }
