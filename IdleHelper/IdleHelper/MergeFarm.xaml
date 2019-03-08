@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IdleHelper.MergeFarm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <!-- header -->
+                <Label Text="Merge Farms Daily Challenge Helper" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            
+                <!-- value -->
+                <Entry x:Name="SellNow" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2"
+                    Placeholder="  1000  "
+                    FontSize="12"
+                    TextChanged="UpdateAllTheThings"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            
+                <!-- value -->
+                <Label x:Name="lblValue" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"
+                    Text="0 gold"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+            
+                <!-- value -->
+                <Label x:Name="lblRecommend" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                    Text="No Action"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+            </Grid>
+
+            <!-- pickers -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <Picker x:Name="pickerTomato" Grid.Row="0" Grid.Column="0"
+                    Title="Select a Tomato Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerWheat" Grid.Row="0" Grid.Column="1"
+                    Title="Select a Wheat Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerEggplant" Grid.Row="1" Grid.Column="0"
+                    Title="Select a Eggplant Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerGrape" Grid.Row="1" Grid.Column="1"
+                    Title="Select a Grape Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerCarrot" Grid.Row="2" Grid.Column="0"
+                    Title="Select a Carrot Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerPumpkin" Grid.Row="2" Grid.Column="1"
+                    Title="Select a Pumpkin Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerPepper" Grid.Row="3" Grid.Column="0"
+                    Title="Select a Pepper Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerCucumber" Grid.Row="3" Grid.Column="1"
+                    Title="Select a Cucumber Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerBlueberry" Grid.Row="4" Grid.Column="0"
+                    Title="Select a Blueberry Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerCabbage" Grid.Row="4" Grid.Column="1"
+                    Title="Select a Cabbage Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="pickerCorn" Grid.Row="5" Grid.Column="0"
+                    Title="Select a Corn Level"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Button x:Name="BtnReturn" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2"
+                    Text="Return"
+                    Clicked="BtnReturn_Clicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
